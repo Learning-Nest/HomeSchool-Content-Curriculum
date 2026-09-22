@@ -1,0 +1,46 @@
+{
+  "slug": "outdoor-measurement",
+  "title": "Outdoor measurement with hands and feet",
+  "subject": "MAT",
+  "level_from": "L2",
+  "level_to": "L2",
+  "duration_min": 20,
+  "materials": [
+    "outdoor space"
+  ],
+  "skills": [
+    "MAT.MEAS.COMPARE"
+  ],
+  "interests": [
+    "nature"
+  ],
+  "summary": "Measure things with hand spans and footsteps and compare.",
+  "steps": [
+    {
+      "id": "s1",
+      "type": "timer_task",
+      "prompt": "Measure three things outside with your hand span.",
+      "duration_sec": 600,
+      "checklist": [
+        "A bench",
+        "A door",
+        "A tree trunk"
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "numeric_input",
+      "prompt": "The bench is 3 hand spans and the door is 2 hand spans. How many altogether?",
+      "answer": 5,
+      "tolerance": 0
+    },
+    {
+      "id": "s3",
+      "type": "photo_evidence",
+      "prompt": "Take a photo of your measuring (optional).",
+      "optional": true,
+      "consent_required": true
+    }
+  ],
+  "recurring": false
+}

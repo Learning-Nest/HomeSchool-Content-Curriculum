@@ -1,0 +1,85 @@
+[
+  {
+    "code": "ENG.PHON.LETSND",
+    "subject": "ENG",
+    "level": "L1",
+    "name": "Recognises letter sounds",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "ENG.COMP.WHAT",
+    "subject": "ENG",
+    "level": "L1",
+    "name": "Answers WHAT questions about a story",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "ENG.WRIT.NAME",
+    "subject": "ENG",
+    "level": "L1",
+    "name": "Writes own name",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "ENG.PHON.CVC",
+    "subject": "ENG",
+    "level": "L2",
+    "name": "Blends CVC words (short vowels)",
+    "prerequisites": [
+      "ENG.PHON.LETSND"
+    ],
+    "typical_evidence": [
+      "activity",
+      "audio"
+    ]
+  },
+  {
+    "code": "ENG.READ.SIGHT",
+    "subject": "ENG",
+    "level": "L2",
+    "name": "Reads common sight words",
+    "prerequisites": [
+      "ENG.PHON.LETSND"
+    ],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "ENG.COMP.RETELL",
+    "subject": "ENG",
+    "level": "L3",
+    "name": "Retells a story in sequence",
+    "prerequisites": [
+      "ENG.COMP.WHAT"
+    ],
+    "typical_evidence": [
+      "activity",
+      "audio"
+    ]
+  },
+  {
+    "code": "ENG.WRIT.SENT",
+    "subject": "ENG",
+    "level": "L3",
+    "name": "Writes a simple sentence",
+    "prerequisites": [
+      "ENG.PHON.CVC"
+    ],
+    "typical_evidence": [
+      "observation"
+    ]
+  }
+]

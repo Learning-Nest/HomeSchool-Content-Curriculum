@@ -1,0 +1,69 @@
+{
+  "slug": "kitchen-counting",
+  "title": "Kitchen counting",
+  "subject": "MAT",
+  "level_from": "L1",
+  "level_to": "L2",
+  "duration_min": 15,
+  "materials": [
+    "spoons",
+    "cups"
+  ],
+  "skills": [
+    "MAT.NUM.COUNT20",
+    "LIF.INSTR.FOLLOW2"
+  ],
+  "interests": [
+    "cooking"
+  ],
+  "summary": "Follow two steps in the kitchen and count what you find.",
+  "steps": [
+    {
+      "id": "s1",
+      "type": "instruction",
+      "text": "First, bring 5 spoons to the table. Then bring 3 cups."
+    },
+    {
+      "id": "s2",
+      "type": "single_choice",
+      "prompt": "How many spoons and cups are on the table altogether?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "7"
+        },
+        {
+          "id": "o2",
+          "label": "8"
+        },
+        {
+          "id": "o3",
+          "label": "9"
+        }
+      ],
+      "correct": [
+        "o2"
+      ],
+      "hint": "Count the spoons first, then keep counting the cups."
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "skill_code": "LIF.INSTR.FOLLOW2",
+      "prompt": "Did your child follow both steps in order?",
+      "rating_options": [
+        "trying",
+        "with_help",
+        "independent"
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "photo_evidence",
+      "prompt": "Take a photo of the table (optional).",
+      "optional": true,
+      "consent_required": true
+    }
+  ],
+  "recurring": false
+}

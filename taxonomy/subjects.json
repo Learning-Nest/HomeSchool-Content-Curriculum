@@ -1,0 +1,50 @@
+[
+  {
+    "code": "ENG",
+    "name": "English Language & Literacy",
+    "display_order": 1,
+    "scope": "Phonics, reading, comprehension, writing"
+  },
+  {
+    "code": "MAT",
+    "name": "Mathematics",
+    "display_order": 2,
+    "scope": "Number, measurement, money, shape"
+  },
+  {
+    "code": "LNG",
+    "name": "Home & Regional Languages",
+    "display_order": 3,
+    "scope": "Listening, speaking, script recognition in the family's chosen language"
+  },
+  {
+    "code": "SCI",
+    "name": "Science & Nature",
+    "display_order": 4,
+    "scope": "Observation, living things, materials, inquiry"
+  },
+  {
+    "code": "SOC",
+    "name": "Social & Environmental Studies",
+    "display_order": 5,
+    "scope": "Family and community, maps, environment, culture"
+  },
+  {
+    "code": "LIF",
+    "name": "Life Skills & Independence",
+    "display_order": 6,
+    "scope": "Self-care, safety, feelings, time"
+  },
+  {
+    "code": "ART",
+    "name": "Creative Arts & Music",
+    "display_order": 7,
+    "scope": "Drawing, craft, rhythm, drama"
+  },
+  {
+    "code": "PHY",
+    "name": "Physical Development & Health",
+    "display_order": 8,
+    "scope": "Gross/fine motor, hygiene, nutrition"
+  }
+]

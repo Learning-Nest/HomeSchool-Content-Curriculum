@@ -1,0 +1,50 @@
+[
+  {
+    "code": "animals",
+    "name": "Animals"
+  },
+  {
+    "code": "space",
+    "name": "Space"
+  },
+  {
+    "code": "dinosaurs",
+    "name": "Dinosaurs"
+  },
+  {
+    "code": "vehicles",
+    "name": "Vehicles"
+  },
+  {
+    "code": "cooking",
+    "name": "Cooking"
+  },
+  {
+    "code": "music",
+    "name": "Music"
+  },
+  {
+    "code": "art",
+    "name": "Art and craft"
+  },
+  {
+    "code": "nature",
+    "name": "Nature"
+  },
+  {
+    "code": "sports",
+    "name": "Sports and movement"
+  },
+  {
+    "code": "stories",
+    "name": "Stories"
+  },
+  {
+    "code": "building",
+    "name": "Building"
+  },
+  {
+    "code": "dance",
+    "name": "Dance"
+  }
+]

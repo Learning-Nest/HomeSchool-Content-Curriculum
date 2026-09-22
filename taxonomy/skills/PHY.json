@@ -1,0 +1,62 @@
+[
+  {
+    "code": "PHY.GROSS.BALL",
+    "subject": "PHY",
+    "level": "L1",
+    "name": "Throws and catches a ball",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "PHY.FINE.SCISSORS",
+    "subject": "PHY",
+    "level": "L1",
+    "name": "Uses scissors safely",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "PHY.FINE.GRIP",
+    "subject": "PHY",
+    "level": "L1",
+    "name": "Holds a pencil with a functional grip",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "PHY.HEALTH.HAND",
+    "subject": "PHY",
+    "level": "L1",
+    "name": "Follows handwashing steps",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "PHY.GROSS.BALANCE",
+    "subject": "PHY",
+    "level": "L2",
+    "name": "Balances on one foot and walks a line",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "PHY.HEALTH.FOOD",
+    "subject": "PHY",
+    "level": "L3",
+    "name": "Sorts foods into healthy choices",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "code": "L1",
+    "name": "Foundation 1",
+    "indicative_age": "≈ 4–5",
+    "description": "Early readiness: sounds, counting to 20, following simple instructions"
+  },
+  {
+    "code": "L2",
+    "name": "Foundation 2",
+    "indicative_age": "≈ 5–6",
+    "description": "Blending, number sense to 20, simple measurement and sorting"
+  },
+  {
+    "code": "L3",
+    "name": "Early primary 1",
+    "indicative_age": "≈ 6–7",
+    "description": "Reading simple sentences, operations within 10, tens and ones, money"
+  },
+  {
+    "code": "L4",
+    "name": "Early primary 2",
+    "indicative_age": "≈ 7–8",
+    "description": "Fluent reading, standard units, place value to 100"
+  },
+  {
+    "code": "L5",
+    "name": "Early primary 3",
+    "indicative_age": "≈ 8–10",
+    "description": "Extended writing, multi-step problems, inquiry"
+  }
+]

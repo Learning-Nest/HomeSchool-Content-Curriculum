@@ -1,0 +1,38 @@
+{
+  "slug": "rhythm-clap-along",
+  "title": "Rhythm clap-along",
+  "subject": "ART",
+  "level_from": "L2",
+  "level_to": "L2",
+  "duration_min": 10,
+  "materials": [],
+  "skills": [
+    "ART.MUS.RHYTHM"
+  ],
+  "interests": [
+    "music",
+    "dance"
+  ],
+  "summary": "Clap a steady beat along with a song.",
+  "steps": [
+    {
+      "id": "s1",
+      "type": "audio_record",
+      "prompt": "Clap along to a song and record it.",
+      "max_seconds": 45,
+      "consent_required": true
+    },
+    {
+      "id": "s2",
+      "type": "parent_checklist",
+      "skill_code": "ART.MUS.RHYTHM",
+      "prompt": "Did your child keep a steady beat?",
+      "rating_options": [
+        "trying",
+        "with_help",
+        "independent"
+      ]
+    }
+  ],
+  "recurring": false
+}

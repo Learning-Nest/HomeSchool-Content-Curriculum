@@ -1,0 +1,79 @@
+[
+  {
+    "code": "LIF.INSTR.FOLLOW2",
+    "subject": "LIF",
+    "level": "L1",
+    "name": "Follows 2-step instructions",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "LIF.REQ.ASK",
+    "subject": "LIF",
+    "level": "L1",
+    "name": "Asks for what they need independently",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "LIF.SELF.DRESS",
+    "subject": "LIF",
+    "level": "L1",
+    "name": "Dresses independently",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "LIF.SELF.MEAL",
+    "subject": "LIF",
+    "level": "L2",
+    "name": "Helps prepare or serve a simple meal",
+    "prerequisites": [
+      "LIF.INSTR.FOLLOW2"
+    ],
+    "typical_evidence": [
+      "observation",
+      "photo"
+    ]
+  },
+  {
+    "code": "LIF.EMO.NAME",
+    "subject": "LIF",
+    "level": "L2",
+    "name": "Names and talks about feelings",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "LIF.SAFE.ROAD",
+    "subject": "LIF",
+    "level": "L3",
+    "name": "Explains basic road and home safety",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "LIF.TIME.CLOCK",
+    "subject": "LIF",
+    "level": "L3",
+    "name": "Tells time to the hour and half-hour",
+    "prerequisites": [
+      "MAT.NUM.COUNT20"
+    ],
+    "typical_evidence": [
+      "activity"
+    ]
+  }
+]

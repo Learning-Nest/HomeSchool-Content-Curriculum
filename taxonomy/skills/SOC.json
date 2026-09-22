@@ -1,0 +1,57 @@
+[
+  {
+    "code": "SOC.FAM.ROLES",
+    "subject": "SOC",
+    "level": "L1",
+    "name": "Describes family and community helpers",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "SOC.ENV.WASTE",
+    "subject": "SOC",
+    "level": "L2",
+    "name": "Sorts waste and explains reuse",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "photo"
+    ]
+  },
+  {
+    "code": "SOC.CUL.FEST",
+    "subject": "SOC",
+    "level": "L2",
+    "name": "Talks about festivals and traditions",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation",
+      "audio"
+    ]
+  },
+  {
+    "code": "SOC.TIME.SEQ",
+    "subject": "SOC",
+    "level": "L2",
+    "name": "Sequences daily and weekly events",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity"
+    ]
+  },
+  {
+    "code": "SOC.MAP.LOCAL",
+    "subject": "SOC",
+    "level": "L3",
+    "name": "Reads a simple map of home and neighbourhood",
+    "prerequisites": [
+      "SOC.FAM.ROLES"
+    ],
+    "typical_evidence": [
+      "activity"
+    ]
+  }
+]

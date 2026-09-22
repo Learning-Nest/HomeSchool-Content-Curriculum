@@ -1,0 +1,54 @@
+{
+  "slug": "five-senses-walk",
+  "title": "Five senses walk",
+  "subject": "SCI",
+  "level_from": "L1",
+  "level_to": "L1",
+  "duration_min": 20,
+  "materials": [
+    "outdoor space"
+  ],
+  "skills": [
+    "SCI.OBS.SENSES"
+  ],
+  "interests": [
+    "nature"
+  ],
+  "summary": "Walk outside and describe what you see, hear, smell and feel.",
+  "steps": [
+    {
+      "id": "s1",
+      "type": "timer_task",
+      "prompt": "Go for a walk. Find one thing for each sense.",
+      "duration_sec": 900,
+      "checklist": [
+        "Something I can see",
+        "Something I can hear",
+        "Something I can smell",
+        "Something I can touch"
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "reflection",
+      "prompt": "How did the walk feel?",
+      "emoji_options": [
+        "😀",
+        "🙂",
+        "😐"
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "skill_code": "SCI.OBS.SENSES",
+      "prompt": "Could your child describe things using the senses?",
+      "rating_options": [
+        "trying",
+        "with_help",
+        "independent"
+      ]
+    }
+  ],
+  "recurring": false
+}

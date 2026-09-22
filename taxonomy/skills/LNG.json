@@ -1,0 +1,69 @@
+[
+  {
+    "code": "LNG.SPK.CONV",
+    "subject": "LNG",
+    "level": "L1",
+    "name": "Speaks about daily events in the home language",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation",
+      "audio"
+    ]
+  },
+  {
+    "code": "LNG.LIS.STORY",
+    "subject": "LNG",
+    "level": "L1",
+    "name": "Listens and responds to a story in the home language",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "LNG.READ.LETTERS",
+    "subject": "LNG",
+    "level": "L2",
+    "name": "Recognises letters of the chosen script",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity"
+    ]
+  },
+  {
+    "code": "LNG.READ.WORDS",
+    "subject": "LNG",
+    "level": "L3",
+    "name": "Reads familiar words in the chosen script",
+    "prerequisites": [
+      "LNG.READ.LETTERS"
+    ],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "LNG.WRIT.LETTERS",
+    "subject": "LNG",
+    "level": "L3",
+    "name": "Writes letters of the chosen script",
+    "prerequisites": [
+      "LNG.READ.LETTERS"
+    ],
+    "typical_evidence": [
+      "observation"
+    ]
+  },
+  {
+    "code": "LNG.SPK.SECOND",
+    "subject": "LNG",
+    "level": "L3",
+    "name": "Uses simple sentences in a second language",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation",
+      "audio"
+    ]
+  }
+]

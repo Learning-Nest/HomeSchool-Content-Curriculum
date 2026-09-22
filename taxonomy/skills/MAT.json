@@ -1,0 +1,108 @@
+[
+  {
+    "code": "MAT.NUM.COUNT20",
+    "subject": "MAT",
+    "level": "L1",
+    "name": "Counts to 20",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "MAT.SHAPE.2D",
+    "subject": "MAT",
+    "level": "L1",
+    "name": "Names basic 2D shapes",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity"
+    ]
+  },
+  {
+    "code": "MAT.NUM.COMPARE",
+    "subject": "MAT",
+    "level": "L2",
+    "name": "Compares numbers to 20",
+    "prerequisites": [
+      "MAT.NUM.COUNT20"
+    ],
+    "typical_evidence": [
+      "activity"
+    ]
+  },
+  {
+    "code": "MAT.NUM.ADD10",
+    "subject": "MAT",
+    "level": "L2",
+    "name": "Adds within 10",
+    "prerequisites": [
+      "MAT.NUM.COUNT20"
+    ],
+    "typical_evidence": [
+      "activity"
+    ]
+  },
+  {
+    "code": "MAT.MEAS.COMPARE",
+    "subject": "MAT",
+    "level": "L2",
+    "name": "Compares length, weight and capacity",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "MAT.NUM.SUB10",
+    "subject": "MAT",
+    "level": "L3",
+    "name": "Subtracts within 10",
+    "prerequisites": [
+      "MAT.NUM.ADD10"
+    ],
+    "typical_evidence": [
+      "activity"
+    ]
+  },
+  {
+    "code": "MAT.NUM.PLACE100",
+    "subject": "MAT",
+    "level": "L3",
+    "name": "Understands tens and ones to 100",
+    "prerequisites": [
+      "MAT.NUM.COMPARE"
+    ],
+    "typical_evidence": [
+      "activity"
+    ]
+  },
+  {
+    "code": "MAT.MONEY.COINS",
+    "subject": "MAT",
+    "level": "L3",
+    "name": "Recognises coins and notes (₹)",
+    "prerequisites": [
+      "MAT.NUM.COMPARE"
+    ],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "MAT.MEAS.UNITS",
+    "subject": "MAT",
+    "level": "L4",
+    "name": "Measures with standard units",
+    "prerequisites": [
+      "MAT.MEAS.COMPARE"
+    ],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  }
+]

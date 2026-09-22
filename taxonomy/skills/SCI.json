@@ -1,0 +1,69 @@
+[
+  {
+    "code": "SCI.OBS.SENSES",
+    "subject": "SCI",
+    "level": "L1",
+    "name": "Uses the five senses to describe objects",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "SCI.LIV.ANIMALS",
+    "subject": "SCI",
+    "level": "L1",
+    "name": "Groups animals by simple features",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity"
+    ]
+  },
+  {
+    "code": "SCI.LIV.PLANTS",
+    "subject": "SCI",
+    "level": "L2",
+    "name": "Identifies parts of a plant",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "photo"
+    ]
+  },
+  {
+    "code": "SCI.ENV.WEATHER",
+    "subject": "SCI",
+    "level": "L2",
+    "name": "Observes and records weather",
+    "prerequisites": [],
+    "typical_evidence": [
+      "activity",
+      "observation"
+    ]
+  },
+  {
+    "code": "SCI.MAT.STATES",
+    "subject": "SCI",
+    "level": "L3",
+    "name": "Sorts solids, liquids and gases",
+    "prerequisites": [
+      "SCI.OBS.SENSES"
+    ],
+    "typical_evidence": [
+      "activity"
+    ]
+  },
+  {
+    "code": "SCI.INQ.QUESTION",
+    "subject": "SCI",
+    "level": "L3",
+    "name": "Asks a question that can be tested",
+    "prerequisites": [
+      "SCI.OBS.SENSES"
+    ],
+    "typical_evidence": [
+      "observation"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "code": "ART.DRAW.FREE",
+    "subject": "ART",
+    "level": "L1",
+    "name": "Draws and colours freely",
+    "prerequisites": [],
+    "typical_evidence": [
+      "photo",
+      "observation"
+    ]
+  },
+  {
+    "code": "ART.MUS.SING",
+    "subject": "ART",
+    "level": "L1",
+    "name": "Sings simple songs",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation",
+      "audio"
+    ]
+  },
+  {
+    "code": "ART.CRAFT.BUILD",
+    "subject": "ART",
+    "level": "L2",
+    "name": "Builds a model from materials and a plan",
+    "prerequisites": [
+      "LIF.INSTR.FOLLOW2"
+    ],
+    "typical_evidence": [
+      "photo",
+      "observation"
+    ]
+  },
+  {
+    "code": "ART.MUS.RHYTHM",
+    "subject": "ART",
+    "level": "L2",
+    "name": "Keeps a steady beat",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation",
+      "audio"
+    ]
+  },
+  {
+    "code": "ART.DRAMA.ROLE",
+    "subject": "ART",
+    "level": "L3",
+    "name": "Role-plays a story",
+    "prerequisites": [],
+    "typical_evidence": [
+      "observation"
+    ]
+  }
+]

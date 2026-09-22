@@ -1,0 +1,52 @@
+{
+  "slug": "sort-the-waste",
+  "title": "Sort the waste",
+  "subject": "SOC",
+  "level_from": "L2",
+  "level_to": "L2",
+  "duration_min": 15,
+  "materials": [
+    "household waste"
+  ],
+  "skills": [
+    "SOC.ENV.WASTE"
+  ],
+  "interests": [
+    "nature"
+  ],
+  "summary": "Sort household waste and learn how to reuse.",
+  "steps": [
+    {
+      "id": "s1",
+      "type": "sequence_order",
+      "prompt": "Put the steps in order.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Collect the waste"
+        },
+        {
+          "id": "i2",
+          "label": "Separate wet and dry waste"
+        },
+        {
+          "id": "i3",
+          "label": "Put each into the right bin"
+        }
+      ],
+      "correct_order": [
+        "i1",
+        "i2",
+        "i3"
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "photo_evidence",
+      "prompt": "Take a photo of the sorted waste (optional).",
+      "optional": true,
+      "consent_required": true
+    }
+  ],
+  "recurring": false
+}

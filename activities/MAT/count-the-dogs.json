@@ -1,0 +1,136 @@
+{
+  "slug": "count-the-dogs",
+  "title": "Count the dogs",
+  "subject": "MAT",
+  "level_from": "L1",
+  "level_to": "L1",
+  "duration_min": 10,
+  "materials": [],
+  "skills": [
+    "MAT.NUM.COUNT20"
+  ],
+  "interests": [
+    "animals"
+  ],
+  "summary": "Count groups of dogs, from 3 up to 15.",
+  "steps": [
+    {
+      "id": "s1",
+      "type": "media_prompt",
+      "caption": "Let us count some dogs together. Point to each dog as you count.",
+      "alt_text": "A park with many dogs playing"
+    },
+    {
+      "id": "s2",
+      "type": "single_choice",
+      "prompt": "Count: 🐕🐕🐕. How many dogs?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "2"
+        },
+        {
+          "id": "o2",
+          "label": "3"
+        },
+        {
+          "id": "o3",
+          "label": "4"
+        }
+      ],
+      "correct": [
+        "o2"
+      ],
+      "hint": "Touch each dog once."
+    },
+    {
+      "id": "s3",
+      "type": "single_choice",
+      "prompt": "Count: 🐕🐕🐕🐕🐕. How many dogs?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "4"
+        },
+        {
+          "id": "o2",
+          "label": "5"
+        },
+        {
+          "id": "o3",
+          "label": "6"
+        }
+      ],
+      "correct": [
+        "o2"
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "single_choice",
+      "prompt": "Count: 🐕🐕🐕🐕🐕🐕🐕🐕. How many dogs?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "7"
+        },
+        {
+          "id": "o2",
+          "label": "8"
+        },
+        {
+          "id": "o3",
+          "label": "9"
+        }
+      ],
+      "correct": [
+        "o2"
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "single_choice",
+      "prompt": "Count: 🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕. How many dogs?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "11"
+        },
+        {
+          "id": "o2",
+          "label": "12"
+        },
+        {
+          "id": "o3",
+          "label": "13"
+        }
+      ],
+      "correct": [
+        "o2"
+      ]
+    },
+    {
+      "id": "s6",
+      "type": "single_choice",
+      "prompt": "Count: 🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕🐕. How many dogs?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "14"
+        },
+        {
+          "id": "o2",
+          "label": "15"
+        },
+        {
+          "id": "o3",
+          "label": "16"
+        }
+      ],
+      "correct": [
+        "o2"
+      ]
+    }
+  ],
+  "recurring": false
+}
