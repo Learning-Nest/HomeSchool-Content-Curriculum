@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "slug": "sort-the-waste",
   "title": "Sort the waste",
   "subject": "SOC",
@@ -8,45 +9,63 @@
   "materials": [
     "household waste"
   ],
-  "skills": [
-    "SOC.ENV.WASTE"
-  ],
   "interests": [
     "nature"
   ],
   "summary": "Sort household waste and learn how to reuse.",
+  "recurring": false,
+  "skills": [
+    "SOC.ENV.WASTE"
+  ],
   "steps": [
     {
       "id": "s1",
       "type": "sequence_order",
       "prompt": "Put the steps in order.",
-      "items": [
+      "config": {
+        "items": [
+          {
+            "id": "i1",
+            "label": "Collect the waste"
+          },
+          {
+            "id": "i2",
+            "label": "Separate wet and dry waste"
+          },
+          {
+            "id": "i3",
+            "label": "Put each into the right bin"
+          }
+        ]
+      },
+      "key": {
+        "correct_order": [
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
         {
-          "id": "i1",
-          "label": "Collect the waste"
-        },
-        {
-          "id": "i2",
-          "label": "Separate wet and dry waste"
-        },
-        {
-          "id": "i3",
-          "label": "Put each into the right bin"
+          "code": "SOC.ENV.WASTE",
+          "weight": 1
         }
-      ],
-      "correct_order": [
-        "i1",
-        "i2",
-        "i3"
       ]
     },
     {
       "id": "s2",
       "type": "photo_evidence",
       "prompt": "Take a photo of the sorted waste (optional).",
-      "optional": true,
-      "consent_required": true
+      "config": {
+        "optional": true,
+        "consent_required": true
+      },
+      "scoring": {
+        "mode": "none"
+      }
     }
-  ],
-  "recurring": false
+  ]
 }

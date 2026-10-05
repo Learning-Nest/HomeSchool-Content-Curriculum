@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "slug": "plant-parts-puzzle",
   "title": "Plant parts puzzle",
   "subject": "SCI",
@@ -9,73 +10,86 @@
     "a leaf",
     "a flower"
   ],
-  "skills": [
-    "SCI.LIV.PLANTS"
-  ],
   "interests": [
     "nature"
   ],
   "summary": "Match each plant part to its job.",
+  "recurring": false,
+  "skills": [
+    "SCI.LIV.PLANTS"
+  ],
   "steps": [
     {
       "id": "s1",
       "type": "match_pairs",
       "prompt": "Match each plant part to what it does.",
-      "left": [
-        {
-          "id": "l1",
-          "label": "Root"
-        },
-        {
-          "id": "l2",
-          "label": "Stem"
-        },
-        {
-          "id": "l3",
-          "label": "Leaf"
-        },
-        {
-          "id": "l4",
-          "label": "Flower"
-        }
-      ],
-      "right": [
-        {
-          "id": "r1",
-          "label": "Holds the plant in the soil"
-        },
-        {
-          "id": "r2",
-          "label": "Carries water up"
-        },
-        {
-          "id": "r3",
-          "label": "Makes food from sunlight"
-        },
-        {
-          "id": "r4",
-          "label": "Makes seeds"
-        }
-      ],
-      "pairs": [
-        [
-          "l1",
-          "r1"
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "Root"
+          },
+          {
+            "id": "l2",
+            "label": "Stem"
+          },
+          {
+            "id": "l3",
+            "label": "Leaf"
+          },
+          {
+            "id": "l4",
+            "label": "Flower"
+          }
         ],
-        [
-          "l2",
-          "r2"
-        ],
-        [
-          "l3",
-          "r3"
-        ],
-        [
-          "l4",
-          "r4"
+        "right": [
+          {
+            "id": "r1",
+            "label": "Holds the plant in the soil"
+          },
+          {
+            "id": "r2",
+            "label": "Carries water up"
+          },
+          {
+            "id": "r3",
+            "label": "Makes food from sunlight"
+          },
+          {
+            "id": "r4",
+            "label": "Makes seeds"
+          }
         ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "SCI.LIV.PLANTS",
+          "weight": 1
+        }
       ]
     }
-  ],
-  "recurring": false
+  ]
 }

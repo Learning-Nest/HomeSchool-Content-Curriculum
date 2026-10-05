@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "slug": "set-the-table",
   "title": "Set the table",
   "subject": "LIF",
@@ -9,42 +10,65 @@
     "plates",
     "cups"
   ],
-  "skills": [
-    "LIF.SELF.MEAL",
-    "LIF.INSTR.FOLLOW2"
-  ],
   "interests": [
     "cooking"
   ],
   "summary": "Help set the table for a family meal.",
+  "recurring": false,
+  "skills": [
+    "LIF.SELF.MEAL",
+    "LIF.INSTR.FOLLOW2"
+  ],
   "steps": [
     {
       "id": "s1",
       "type": "instruction",
-      "text": "Put one plate and one cup at each place. Then put a spoon next to each plate."
+      "prompt": "Put one plate and one cup at each place. Then put a spoon next to each plate.",
+      "scoring": {
+        "mode": "none"
+      }
     },
     {
       "id": "s2",
       "type": "parent_checklist",
-      "skill_code": "LIF.SELF.MEAL",
       "prompt": "Did your child help serve or set up the meal?",
-      "rating_options": [
-        "trying",
-        "with_help",
-        "independent"
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "LIF.SELF.MEAL",
+          "weight": 1
+        }
       ]
     },
     {
       "id": "s3",
       "type": "parent_checklist",
-      "skill_code": "LIF.INSTR.FOLLOW2",
       "prompt": "Did your child follow the two steps?",
-      "rating_options": [
-        "trying",
-        "with_help",
-        "independent"
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "LIF.INSTR.FOLLOW2",
+          "weight": 1
+        }
       ]
     }
-  ],
-  "recurring": false
+  ]
 }

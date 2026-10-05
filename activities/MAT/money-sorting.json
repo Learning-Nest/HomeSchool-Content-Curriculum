@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "slug": "money-sorting",
   "title": "Money sorting",
   "subject": "MAT",
@@ -8,82 +9,105 @@
   "materials": [
     "coins"
   ],
+  "interests": [],
+  "summary": "Match coins to their values and sort real coins.",
+  "recurring": false,
   "skills": [
     "MAT.MONEY.COINS"
   ],
-  "interests": [],
-  "summary": "Match coins to their values and sort real coins.",
   "steps": [
     {
       "id": "s1",
       "type": "match_pairs",
       "prompt": "Match the coin to its value.",
-      "left": [
-        {
-          "id": "l1",
-          "label": "₹1"
-        },
-        {
-          "id": "l2",
-          "label": "₹2"
-        },
-        {
-          "id": "l3",
-          "label": "₹5"
-        },
-        {
-          "id": "l4",
-          "label": "₹10"
-        }
-      ],
-      "right": [
-        {
-          "id": "r1",
-          "label": "one rupee"
-        },
-        {
-          "id": "r2",
-          "label": "two rupees"
-        },
-        {
-          "id": "r3",
-          "label": "five rupees"
-        },
-        {
-          "id": "r4",
-          "label": "ten rupees"
-        }
-      ],
-      "pairs": [
-        [
-          "l1",
-          "r1"
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "₹1"
+          },
+          {
+            "id": "l2",
+            "label": "₹2"
+          },
+          {
+            "id": "l3",
+            "label": "₹5"
+          },
+          {
+            "id": "l4",
+            "label": "₹10"
+          }
         ],
-        [
-          "l2",
-          "r2"
-        ],
-        [
-          "l3",
-          "r3"
-        ],
-        [
-          "l4",
-          "r4"
+        "right": [
+          {
+            "id": "r1",
+            "label": "one rupee"
+          },
+          {
+            "id": "r2",
+            "label": "two rupees"
+          },
+          {
+            "id": "r3",
+            "label": "five rupees"
+          },
+          {
+            "id": "r4",
+            "label": "ten rupees"
+          }
         ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "MAT.MONEY.COINS",
+          "weight": 1
+        }
       ]
     },
     {
       "id": "s2",
       "type": "parent_checklist",
-      "skill_code": "MAT.MONEY.COINS",
       "prompt": "Ask your child to sort real coins by value. How did they do?",
-      "rating_options": [
-        "trying",
-        "with_help",
-        "independent"
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "MAT.MONEY.COINS",
+          "weight": 1
+        }
       ]
     }
-  ],
-  "recurring": false
+  ]
 }

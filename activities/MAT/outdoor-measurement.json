@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "slug": "outdoor-measurement",
   "title": "Outdoor measurement with hands and feet",
   "subject": "MAT",
@@ -8,39 +9,60 @@
   "materials": [
     "outdoor space"
   ],
-  "skills": [
-    "MAT.MEAS.COMPARE"
-  ],
   "interests": [
     "nature"
   ],
   "summary": "Measure things with hand spans and footsteps and compare.",
+  "recurring": false,
+  "skills": [
+    "MAT.MEAS.COMPARE"
+  ],
   "steps": [
     {
       "id": "s1",
       "type": "timer_task",
       "prompt": "Measure three things outside with your hand span.",
-      "duration_sec": 600,
-      "checklist": [
-        "A bench",
-        "A door",
-        "A tree trunk"
-      ]
+      "config": {
+        "duration_sec": 600,
+        "checklist": [
+          "A bench",
+          "A door",
+          "A tree trunk"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
     },
     {
       "id": "s2",
       "type": "numeric_input",
       "prompt": "The bench is 3 hand spans and the door is 2 hand spans. How many altogether?",
-      "answer": 5,
-      "tolerance": 0
+      "key": {
+        "answer": 5,
+        "tolerance": 0
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "MAT.MEAS.COMPARE",
+          "weight": 1
+        }
+      ]
     },
     {
       "id": "s3",
       "type": "photo_evidence",
       "prompt": "Take a photo of your measuring (optional).",
-      "optional": true,
-      "consent_required": true
+      "config": {
+        "optional": true,
+        "consent_required": true
+      },
+      "scoring": {
+        "mode": "none"
+      }
     }
-  ],
-  "recurring": false
+  ]
 }

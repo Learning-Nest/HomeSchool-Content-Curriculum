@@ -13,10 +13,76 @@ from common import ROOT, load_all, read
 SCORED = {"single_choice", "multi_choice", "numeric_input", "short_text", "sequence_order", "match_pairs"}
 
 
+def evidence_steps(a: dict) -> list[dict]:
+    """Enabled exercises that produce skill evidence: auto-scored (with a key) or rated by a parent."""
+    out = []
+    for st in a.get("steps", []):
+        if st.get("enabled", True) is False:
+            continue
+        t = st.get("type")
+        mode = (st.get("scoring") or {}).get("mode") or (
+            "auto" if t in SCORED else "parent_rubric" if t == "parent_checklist" else "none"
+        )
+        if t == "parent_checklist" and mode != "none":
+            out.append(st)
+        elif t in SCORED and mode == "auto" and not (t == "short_text" and not (st.get("key") or {}).get("accepted")):
+            out.append(st)
+    return out
+
+
+def check_v2(a: dict, skills: dict) -> list[str]:
+    """Rules the JSON Schema cannot express (mirrors backend-api/app/services/content.py `_check_v2`)."""
+    problems: list[str] = []
+    steps = a.get("steps", [])
+    if not any(st.get("enabled", True) for st in steps):
+        problems.append("at least one exercise must be enabled")
+    evidence = evidence_steps(a)
+    for st in steps:
+        sid, t = st.get("id"), st.get("type")
+        cfg, key = st.get("config", {}), st.get("key", {})
+        codes = [r["code"] for r in st.get("skills", [])]
+        if len(codes) != len(set(codes)):
+            problems.append(f"{sid}: skills lists a skill twice")
+        for c in codes:
+            if c not in skills:
+                problems.append(f"{sid}: unknown skill {c}")
+        mode = (st.get("scoring") or {}).get("mode")
+        if mode == "auto" and t not in SCORED:
+            problems.append(f"{sid}: scoring.mode 'auto' is not available for {t}")
+        if mode == "parent_rubric" and t != "parent_checklist":
+            problems.append(f"{sid}: scoring.mode 'parent_rubric' is only for parent_checklist")
+        if st in evidence and not codes:
+            problems.append(f"{sid}: a scored exercise needs at least one skill")
+        if t in ("single_choice", "multi_choice"):
+            opts = [o["id"] for o in cfg.get("options", [])]
+            if len(opts) != len(set(opts)):
+                problems.append(f"{sid}: option ids must be unique")
+            if not set(key.get("correct", [])) <= set(opts):
+                problems.append(f"{sid}: key.correct refers to an unknown option")
+            if st in evidence and not key.get("correct"):
+                problems.append(f"{sid}: a scored choice exercise needs key.correct")
+        if t == "sequence_order":
+            items = sorted(i["id"] for i in cfg.get("items", []))
+            if sorted(key.get("correct_order", [])) != items:
+                problems.append(f"{sid}: key.correct_order must list every item exactly once")
+        if t == "match_pairs":
+            left, right = {i["id"] for i in cfg.get("left", [])}, {i["id"] for i in cfg.get("right", [])}
+            for p, q in key.get("pairs", []):
+                if p not in left or q not in right:
+                    problems.append(f"{sid}: pair {p},{q} refers to an unknown item")
+    derived = list(dict.fromkeys(r["code"] for st in evidence for r in st.get("skills", [])))
+    if not derived:
+        problems.append("no exercise gives skill evidence")
+    elif sorted(a.get("skills", [])) != sorted(derived):
+        problems.append(f"skills {a.get('skills')} must equal the skills of its scored exercises {derived}")
+    return problems
+
+
 def main() -> int:
     data = load_all()
     problems: list[str] = []
     validator = Draft202012Validator(read("schemas/activity.schema.json"))
+    validator_v2 = Draft202012Validator(read("schemas/activity.v2.schema.json"))
     levels = [x["code"] for x in data["levels"]]
     subjects = {x["code"] for x in data["subjects"]}
     interests = {x["code"] for x in data["interests"]}
@@ -36,8 +102,11 @@ def main() -> int:
     slugs: set[str] = set()
     for a in data["activities"]:
         where = f"activity {a.get('slug')}"
-        for e in validator.iter_errors(a):
+        v2 = a.get("schema_version") == 2
+        for e in (validator_v2 if v2 else validator).iter_errors(a):
             problems.append(f"{where}: {'/'.join(map(str, e.path)) or '(root)'}: {e.message[:140]}")
+        if v2:
+            problems += [f"{where}: {p}" for p in check_v2(a, skills)]
         if a.get("slug") in slugs:
             problems.append(f"{where}: duplicate slug")
         slugs.add(a.get("slug"))
@@ -54,6 +123,8 @@ def main() -> int:
         ids = [st.get("id") for st in a.get("steps", [])]
         if len(ids) != len(set(ids)):
             problems.append(f"{where}: duplicate step ids")
+        if v2:
+            continue
         for st in a.get("steps", []):
             if st.get("type") in ("single_choice", "multi_choice"):
                 opts = {o["id"] for o in st.get("options", [])}

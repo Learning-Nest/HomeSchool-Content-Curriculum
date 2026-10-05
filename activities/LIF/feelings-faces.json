@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "slug": "feelings-faces",
   "title": "Feelings faces",
   "subject": "LIF",
@@ -6,75 +7,111 @@
   "level_to": "L2",
   "duration_min": 10,
   "materials": [],
-  "skills": [
-    "LIF.EMO.NAME"
-  ],
   "interests": [
     "stories"
   ],
   "summary": "Name feelings from faces and talk about them.",
+  "recurring": false,
+  "skills": [
+    "LIF.EMO.NAME"
+  ],
   "steps": [
     {
       "id": "s1",
       "type": "media_prompt",
-      "caption": "Look at the faces. How do they feel?",
-      "alt_text": "Three faces: happy, sad and angry"
+      "config": {
+        "caption": "Look at the faces. How do they feel?",
+        "alt_text": "Three faces: happy, sad and angry"
+      },
+      "scoring": {
+        "mode": "none"
+      }
     },
     {
       "id": "s2",
       "type": "single_choice",
       "prompt": "Which face is happy?",
-      "options": [
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "😊"
+          },
+          {
+            "id": "o2",
+            "label": "😢"
+          },
+          {
+            "id": "o3",
+            "label": "😠"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
         {
-          "id": "o1",
-          "label": "😊"
-        },
-        {
-          "id": "o2",
-          "label": "😢"
-        },
-        {
-          "id": "o3",
-          "label": "😠"
+          "code": "LIF.EMO.NAME",
+          "weight": 1
         }
-      ],
-      "correct": [
-        "o1"
       ]
     },
     {
       "id": "s3",
       "type": "single_choice",
       "prompt": "Which face is sad?",
-      "options": [
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "😊"
+          },
+          {
+            "id": "o2",
+            "label": "😢"
+          },
+          {
+            "id": "o3",
+            "label": "😠"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
         {
-          "id": "o1",
-          "label": "😊"
-        },
-        {
-          "id": "o2",
-          "label": "😢"
-        },
-        {
-          "id": "o3",
-          "label": "😠"
+          "code": "LIF.EMO.NAME",
+          "weight": 1
         }
-      ],
-      "correct": [
-        "o2"
       ]
     },
     {
       "id": "s4",
       "type": "reflection",
       "prompt": "How do you feel right now?",
-      "emoji_options": [
-        "😊",
-        "😢",
-        "😠",
-        "😴"
-      ]
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😢",
+          "😠",
+          "😴"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
     }
-  ],
-  "recurring": false
+  ]
 }

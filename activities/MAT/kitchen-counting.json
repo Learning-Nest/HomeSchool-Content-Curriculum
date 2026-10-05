@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "slug": "kitchen-counting",
   "title": "Kitchen counting",
   "subject": "MAT",
@@ -9,61 +10,96 @@
     "spoons",
     "cups"
   ],
-  "skills": [
-    "MAT.NUM.COUNT20",
-    "LIF.INSTR.FOLLOW2"
-  ],
   "interests": [
     "cooking"
   ],
   "summary": "Follow two steps in the kitchen and count what you find.",
+  "recurring": false,
+  "skills": [
+    "MAT.NUM.COUNT20",
+    "LIF.INSTR.FOLLOW2"
+  ],
   "steps": [
     {
       "id": "s1",
       "type": "instruction",
-      "text": "First, bring 5 spoons to the table. Then bring 3 cups."
+      "prompt": "First, bring 5 spoons to the table. Then bring 3 cups.",
+      "scoring": {
+        "mode": "none"
+      }
     },
     {
       "id": "s2",
       "type": "single_choice",
       "prompt": "How many spoons and cups are on the table altogether?",
-      "options": [
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "7"
+          },
+          {
+            "id": "o2",
+            "label": "8"
+          },
+          {
+            "id": "o3",
+            "label": "9"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
         {
-          "id": "o1",
-          "label": "7"
-        },
-        {
-          "id": "o2",
-          "label": "8"
-        },
-        {
-          "id": "o3",
-          "label": "9"
+          "code": "MAT.NUM.COUNT20",
+          "weight": 1
         }
       ],
-      "correct": [
-        "o2"
-      ],
-      "hint": "Count the spoons first, then keep counting the cups."
+      "feedback": {
+        "hints": [
+          "Count the spoons first, then keep counting the cups."
+        ]
+      }
     },
     {
       "id": "s3",
       "type": "parent_checklist",
-      "skill_code": "LIF.INSTR.FOLLOW2",
       "prompt": "Did your child follow both steps in order?",
-      "rating_options": [
-        "trying",
-        "with_help",
-        "independent"
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "LIF.INSTR.FOLLOW2",
+          "weight": 1
+        }
       ]
     },
     {
       "id": "s4",
       "type": "photo_evidence",
       "prompt": "Take a photo of the table (optional).",
-      "optional": true,
-      "consent_required": true
+      "config": {
+        "optional": true,
+        "consent_required": true
+      },
+      "scoring": {
+        "mode": "none"
+      }
     }
-  ],
-  "recurring": false
+  ]
 }

@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "slug": "phonics-short-vowels",
   "title": "Phonics: short vowels",
   "subject": "ENG",
@@ -8,74 +9,97 @@
   "materials": [
     "picture cards"
   ],
-  "skills": [
-    "ENG.PHON.CVC"
-  ],
   "interests": [
     "stories"
   ],
   "summary": "Blend short-vowel words and match them to pictures.",
+  "recurring": false,
+  "skills": [
+    "ENG.PHON.CVC"
+  ],
   "steps": [
     {
       "id": "s1",
       "type": "media_prompt",
-      "caption": "Say each sound slowly, then blend: c - a - t.",
-      "alt_text": "A cat sitting on a mat"
+      "config": {
+        "caption": "Say each sound slowly, then blend: c - a - t.",
+        "alt_text": "A cat sitting on a mat"
+      },
+      "scoring": {
+        "mode": "none"
+      }
     },
     {
       "id": "s2",
       "type": "match_pairs",
       "prompt": "Match each word to its picture.",
-      "left": [
-        {
-          "id": "l1",
-          "label": "cat"
-        },
-        {
-          "id": "l2",
-          "label": "dog"
-        },
-        {
-          "id": "l3",
-          "label": "pig"
-        }
-      ],
-      "right": [
-        {
-          "id": "r1",
-          "label": "🐱"
-        },
-        {
-          "id": "r2",
-          "label": "🐶"
-        },
-        {
-          "id": "r3",
-          "label": "🐷"
-        }
-      ],
-      "pairs": [
-        [
-          "l1",
-          "r1"
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "cat"
+          },
+          {
+            "id": "l2",
+            "label": "dog"
+          },
+          {
+            "id": "l3",
+            "label": "pig"
+          }
         ],
-        [
-          "l2",
-          "r2"
-        ],
-        [
-          "l3",
-          "r3"
+        "right": [
+          {
+            "id": "r1",
+            "label": "🐱"
+          },
+          {
+            "id": "r2",
+            "label": "🐶"
+          },
+          {
+            "id": "r3",
+            "label": "🐷"
+          }
         ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.CVC",
+          "weight": 1
+        }
       ]
     },
     {
       "id": "s3",
       "type": "audio_record",
       "prompt": "Read these words aloud: cat, sit, hop.",
-      "max_seconds": 30,
-      "consent_required": true
+      "config": {
+        "max_seconds": 30,
+        "consent_required": true
+      },
+      "scoring": {
+        "mode": "none"
+      }
     }
-  ],
-  "recurring": false
+  ]
 }

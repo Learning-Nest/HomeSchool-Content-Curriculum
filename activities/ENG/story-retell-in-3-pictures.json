@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "slug": "story-retell-in-3-pictures",
   "title": "Story retell in 3 pictures",
   "subject": "ENG",
@@ -8,73 +9,107 @@
   "materials": [
     "picture book"
   ],
-  "skills": [
-    "ENG.COMP.RETELL",
-    "ENG.COMP.WHAT"
-  ],
   "interests": [
     "stories"
   ],
   "summary": "Put the story pictures in order and tell the story.",
+  "recurring": false,
+  "skills": [
+    "ENG.COMP.RETELL",
+    "ENG.COMP.WHAT"
+  ],
   "steps": [
     {
       "id": "s1",
       "type": "instruction",
-      "text": "Read a short picture book together. Pick three pictures from it."
+      "prompt": "Read a short picture book together. Pick three pictures from it.",
+      "scoring": {
+        "mode": "none"
+      }
     },
     {
       "id": "s2",
       "type": "sequence_order",
       "prompt": "Put the story in order.",
-      "items": [
+      "config": {
+        "items": [
+          {
+            "id": "i1",
+            "label": "A boy plants a seed"
+          },
+          {
+            "id": "i2",
+            "label": "The seed grows into a plant"
+          },
+          {
+            "id": "i3",
+            "label": "The boy picks a flower"
+          }
+        ]
+      },
+      "key": {
+        "correct_order": [
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
         {
-          "id": "i1",
-          "label": "A boy plants a seed"
-        },
-        {
-          "id": "i2",
-          "label": "The seed grows into a plant"
-        },
-        {
-          "id": "i3",
-          "label": "The boy picks a flower"
+          "code": "ENG.COMP.RETELL",
+          "weight": 1
         }
-      ],
-      "correct_order": [
-        "i1",
-        "i2",
-        "i3"
       ]
     },
     {
       "id": "s3",
       "type": "single_choice",
       "prompt": "What did the boy plant?",
-      "options": [
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "A seed"
+          },
+          {
+            "id": "o2",
+            "label": "A shoe"
+          },
+          {
+            "id": "o3",
+            "label": "A ball"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
         {
-          "id": "o1",
-          "label": "A seed"
-        },
-        {
-          "id": "o2",
-          "label": "A shoe"
-        },
-        {
-          "id": "o3",
-          "label": "A ball"
+          "code": "ENG.COMP.WHAT",
+          "weight": 1
         }
-      ],
-      "correct": [
-        "o1"
       ]
     },
     {
       "id": "s4",
       "type": "audio_record",
       "prompt": "Tell the story in your own words.",
-      "max_seconds": 60,
-      "consent_required": true
+      "config": {
+        "max_seconds": 60,
+        "consent_required": true
+      },
+      "scoring": {
+        "mode": "none"
+      }
     }
-  ],
-  "recurring": false
+  ]
 }
