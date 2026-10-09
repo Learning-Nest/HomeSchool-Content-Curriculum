@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "slug": "follow-two-actions",
+  "title": "Listen and do two actions",
+  "subject": "LIF",
+  "level_from": "L2",
+  "level_to": "L3",
+  "duration_min": 8,
+  "materials": [],
+  "interests": [],
+  "summary": "Listen to two body-movement instructions and do them in order.",
+  "recurring": false,
+  "skills": [
+    "LIF.INSTR.FOLLOW2"
+  ],
+  "steps": [
+    {
+      "id": "s2",
+      "type": "instruction",
+      "prompt": "Ask an adult to say two actions, for example: “Clap your hands, then tap your feet.” Listen and do them in order.",
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "prompt": "Did your child follow the two actions in the given order?",
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "LIF.INSTR.FOLLOW2",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

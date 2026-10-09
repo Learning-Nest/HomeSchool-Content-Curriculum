@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "slug": "handwashing-order",
+  "title": "Put handwashing steps in order",
+  "subject": "PHY",
+  "level_from": "L1",
+  "level_to": "L2",
+  "duration_min": 10,
+  "materials": [],
+  "interests": [],
+  "summary": "Put the four handwashing steps in the right order.",
+  "recurring": false,
+  "skills": [
+    "PHY.HEALTH.HAND"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "sequence_order",
+      "prompt": "Put the handwashing steps in the correct order.",
+      "config": {
+        "items": [
+          {
+            "id": "i1",
+            "label": "Rub soap over your hands."
+          },
+          {
+            "id": "i2",
+            "label": "Rinse the soap off your hands."
+          },
+          {
+            "id": "i3",
+            "label": "Open the tap or pour water on your hands."
+          },
+          {
+            "id": "i4",
+            "label": "Wash between the fingers."
+          }
+        ]
+      },
+      "key": {
+        "correct_order": [
+          "i3",
+          "i1",
+          "i4",
+          "i2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "PHY.HEALTH.HAND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Try each item one at a time."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "timer_task",
+      "prompt": "Act out the four handwashing steps without water. Say each step out loud as you do it.",
+      "config": {
+        "duration_sec": 120,
+        "checklist": [
+          "Say each step in order",
+          "Show the actions with your hands"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

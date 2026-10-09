@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "slug": "make-a-body-parts-chart",
+  "title": "Make a body-parts chart",
+  "subject": "ART",
+  "level_from": "L2",
+  "level_to": "L4",
+  "duration_min": 20,
+  "materials": [
+    "paper",
+    "pencil or crayons"
+  ],
+  "interests": [
+    "art"
+  ],
+  "summary": "Draw a person and label the body parts.",
+  "recurring": false,
+  "skills": [
+    "ART.DRAW.FREE"
+  ],
+  "steps": [
+    {
+      "id": "s2",
+      "type": "instruction",
+      "prompt": "Draw a simple person or use a picture. With help, label head, eyes, ears, nose, mouth, hands and feet.",
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "prompt": "Did your child identify and label several body parts?",
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "ART.DRAW.FREE",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "photo_evidence",
+      "prompt": "Take an optional photo of the labelled chart.",
+      "config": {
+        "optional": true,
+        "consent_required": true
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s5",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

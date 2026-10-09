@@ -1,0 +1,156 @@
+{
+  "schema_version": 2,
+  "slug": "this-or-these",
+  "title": "This or these?",
+  "subject": "ENG",
+  "level_from": "L2",
+  "level_to": "L3",
+  "duration_min": 12,
+  "materials": [],
+  "interests": [],
+  "summary": "Choose “This is” for one thing and “These are” for more than one.",
+  "recurring": false,
+  "skills": [
+    "ENG.READ.SIGHT"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "single_choice",
+      "prompt": "Choose the sentence: (point to one nose)",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "This is my nose."
+          },
+          {
+            "id": "o2",
+            "label": "These are my nose."
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.READ.SIGHT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "single_choice",
+      "prompt": "Choose the sentence: (point to both ears)",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "This is my ears."
+          },
+          {
+            "id": "o2",
+            "label": "These are my ears."
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.READ.SIGHT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "single_choice",
+      "prompt": "Choose the sentence: (show both hands)",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "These are my hands."
+          },
+          {
+            "id": "o2",
+            "label": "This is my hands."
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.READ.SIGHT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "type": "timer_task",
+      "prompt": "Point to your body parts and say “This is my …” for one and “These are my …” for two.",
+      "config": {
+        "duration_sec": 180,
+        "checklist": [
+          "Point to one body part: “This is my …”",
+          "Point to two body parts: “These are my …”"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s5",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

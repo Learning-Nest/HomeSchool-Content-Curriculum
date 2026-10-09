@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "slug": "my-body-sentence",
+  "title": "Complete the body sentence",
+  "subject": "ENG",
+  "level_from": "L2",
+  "level_to": "L3",
+  "duration_min": 10,
+  "materials": [],
+  "interests": [],
+  "summary": "Finish simple sentences about what we do with our body parts.",
+  "recurring": false,
+  "skills": [
+    "ENG.READ.SIGHT"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "single_choice",
+      "prompt": "I see with my ____.",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "ears"
+          },
+          {
+            "id": "o2",
+            "label": "eyes"
+          },
+          {
+            "id": "o3",
+            "label": "nose"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.READ.SIGHT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Think about the body part used for seeing."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "single_choice",
+      "prompt": "I hear with my ____.",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "ears"
+          },
+          {
+            "id": "o2",
+            "label": "hands"
+          },
+          {
+            "id": "o3",
+            "label": "legs"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.READ.SIGHT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "timer_task",
+      "prompt": "Say your own sentence that starts with “I … with my …”. Say it again to an adult.",
+      "config": {
+        "duration_sec": 120,
+        "checklist": [
+          "Say one sentence about a body part",
+          "Say it again to an adult"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s4",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

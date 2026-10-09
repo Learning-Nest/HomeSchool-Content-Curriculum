@@ -1,0 +1,168 @@
+{
+  "schema_version": 2,
+  "slug": "initial-sound-odd-one-out",
+  "title": "Which word starts differently?",
+  "subject": "ENG",
+  "level_from": "L2",
+  "level_to": "L3",
+  "duration_min": 10,
+  "materials": [],
+  "interests": [],
+  "summary": "Find the word that starts with a different sound from the other two.",
+  "recurring": false,
+  "skills": [
+    "ENG.PHON.LETSND"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "single_choice",
+      "prompt": "Which word starts with a different sound from the other two?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "bag"
+          },
+          {
+            "id": "o2",
+            "label": "cap"
+          },
+          {
+            "id": "o3",
+            "label": "balloon"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Say each word slowly. Bag and balloon both start with the same sound."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "single_choice",
+      "prompt": "Which word starts with a different sound from the other two?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "apple"
+          },
+          {
+            "id": "o2",
+            "label": "ant"
+          },
+          {
+            "id": "o3",
+            "label": "clock"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o3"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "single_choice",
+      "prompt": "Which word starts with a different sound from the other two?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "egg"
+          },
+          {
+            "id": "o2",
+            "label": "dog"
+          },
+          {
+            "id": "o3",
+            "label": "drum"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "type": "timer_task",
+      "prompt": "Say three words out loud: two start with the same sound and one is different. Ask an adult to find the different one.",
+      "config": {
+        "duration_sec": 180,
+        "checklist": [
+          "Say three words aloud",
+          "Ask an adult to find the odd one"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s5",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

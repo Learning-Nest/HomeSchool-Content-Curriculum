@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "slug": "practise-handwashing",
+  "title": "Practise washing hands",
+  "subject": "PHY",
+  "level_from": "L1",
+  "level_to": "L3",
+  "duration_min": 5,
+  "materials": [
+    "water",
+    "soap"
+  ],
+  "interests": [],
+  "summary": "Practise washing your hands with soap and water, with an adult nearby.",
+  "recurring": false,
+  "skills": [
+    "PHY.HEALTH.HAND"
+  ],
+  "steps": [
+    {
+      "id": "s2",
+      "type": "instruction",
+      "prompt": "With an adult nearby, wet your hands, rub soap over them, wash between your fingers, and rinse your hands.",
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "prompt": "How independently did your child complete the handwashing steps?",
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "PHY.HEALTH.HAND",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

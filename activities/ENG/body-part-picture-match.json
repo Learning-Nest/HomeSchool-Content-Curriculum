@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "slug": "body-part-picture-match",
+  "title": "Match body parts",
+  "subject": "ENG",
+  "level_from": "L1",
+  "level_to": "L2",
+  "duration_min": 10,
+  "materials": [
+    "picture cards"
+  ],
+  "interests": [],
+  "summary": "Match body-part words to their pictures.",
+  "recurring": false,
+  "skills": [
+    "ENG.READ.SIGHT"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "match_pairs",
+      "prompt": "Match each body part to its picture.",
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "Eye"
+          },
+          {
+            "id": "l2",
+            "label": "Ear"
+          },
+          {
+            "id": "l3",
+            "label": "Nose"
+          },
+          {
+            "id": "l4",
+            "label": "Mouth"
+          },
+          {
+            "id": "l5",
+            "label": "Hand"
+          },
+          {
+            "id": "l6",
+            "label": "Foot"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "👁️"
+          },
+          {
+            "id": "r2",
+            "label": "👂"
+          },
+          {
+            "id": "r3",
+            "label": "👃"
+          },
+          {
+            "id": "r4",
+            "label": "👄"
+          },
+          {
+            "id": "r5",
+            "label": "✋"
+          },
+          {
+            "id": "r6",
+            "label": "🦶"
+          }
+        ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ],
+          [
+            "l5",
+            "r5"
+          ],
+          [
+            "l6",
+            "r6"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.READ.SIGHT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Try each item one at a time."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "timer_task",
+      "prompt": "Point to each body-part picture and say its name out loud.",
+      "config": {
+        "duration_sec": 120,
+        "checklist": [
+          "Point to each picture",
+          "Say the name of each body part"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

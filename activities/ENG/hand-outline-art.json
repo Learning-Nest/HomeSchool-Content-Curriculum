@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "slug": "hand-outline-art",
+  "title": "Make a hand picture",
+  "subject": "ART",
+  "level_from": "L1",
+  "level_to": "L3",
+  "duration_min": 20,
+  "materials": [
+    "paper",
+    "crayons"
+  ],
+  "interests": [
+    "art"
+  ],
+  "summary": "Trace your hand on paper and decorate it with colours and patterns.",
+  "recurring": false,
+  "skills": [
+    "ART.DRAW.FREE"
+  ],
+  "steps": [
+    {
+      "id": "s2",
+      "type": "instruction",
+      "prompt": "Place one palm on paper. Trace around it with help if needed, then decorate the hand with colours or patterns.",
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "prompt": "Did your child make and decorate a hand outline?",
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "ART.DRAW.FREE",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "photo_evidence",
+      "prompt": "Take an optional photo of the finished hand picture.",
+      "config": {
+        "optional": true,
+        "consent_required": true
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s5",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

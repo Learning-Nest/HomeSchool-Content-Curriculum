@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "slug": "alphabet-initial-sound-sort",
+  "title": "Sort words by first sound",
+  "subject": "ENG",
+  "level_from": "L3",
+  "level_to": "L4",
+  "duration_min": 15,
+  "materials": [
+    "word or picture cards"
+  ],
+  "interests": [],
+  "summary": "Match words to the letter they start with.",
+  "recurring": false,
+  "skills": [
+    "ENG.PHON.LETSND"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "match_pairs",
+      "prompt": "Match each word to its starting letter.",
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "ant"
+          },
+          {
+            "id": "l2",
+            "label": "bag"
+          },
+          {
+            "id": "l3",
+            "label": "cat"
+          },
+          {
+            "id": "l4",
+            "label": "dog"
+          },
+          {
+            "id": "l5",
+            "label": "egg"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "d"
+          },
+          {
+            "id": "r2",
+            "label": "a"
+          },
+          {
+            "id": "r3",
+            "label": "e"
+          },
+          {
+            "id": "r4",
+            "label": "c"
+          },
+          {
+            "id": "r5",
+            "label": "b"
+          }
+        ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r5"
+          ],
+          [
+            "l3",
+            "r4"
+          ],
+          [
+            "l4",
+            "r1"
+          ],
+          [
+            "l5",
+            "r3"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Try each item one at a time."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "timer_task",
+      "prompt": "Sort your word or picture cards into piles by their first letter. Say the first sound of each card.",
+      "config": {
+        "duration_sec": 180,
+        "checklist": [
+          "Sort the cards into piles by first letter",
+          "Say the first sound of each card"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

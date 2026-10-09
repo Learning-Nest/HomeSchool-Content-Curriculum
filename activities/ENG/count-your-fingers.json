@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "slug": "count-your-fingers",
+  "title": "Count your fingers",
+  "subject": "MAT",
+  "level_from": "L1",
+  "level_to": "L2",
+  "duration_min": 10,
+  "materials": [],
+  "interests": [],
+  "summary": "Count the fingers on one hand and on both hands.",
+  "recurring": false,
+  "skills": [
+    "MAT.NUM.COUNT20"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "instruction",
+      "prompt": "Hold up one hand. Touch each finger as you count. Then count the fingers on both hands.",
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s2",
+      "type": "numeric_input",
+      "prompt": "How many fingers are on one hand?",
+      "key": {
+        "answer": 5,
+        "tolerance": 0
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "MAT.NUM.COUNT20",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Touch each finger once."
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "numeric_input",
+      "prompt": "How many fingers are on two hands altogether?",
+      "key": {
+        "answer": 10,
+        "tolerance": 0
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "MAT.NUM.COUNT20",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Count five on one hand, then five on the other."
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

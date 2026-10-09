@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "slug": "trace-a-to-f",
+  "title": "Trace letters A to F",
+  "subject": "ENG",
+  "level_from": "L1",
+  "level_to": "L2",
+  "duration_min": 15,
+  "materials": [
+    "paper",
+    "pencil or crayon"
+  ],
+  "interests": [],
+  "summary": "Practise writing the letters A to F with a good pencil grip.",
+  "recurring": false,
+  "skills": [
+    "ENG.PHON.LETSND",
+    "PHY.FINE.GRIP"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "single_choice",
+      "prompt": "Which letter makes the first sound in “ant”?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "A"
+          },
+          {
+            "id": "o2",
+            "label": "B"
+          },
+          {
+            "id": "o3",
+            "label": "F"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Say each answer out loud and pick the one that sounds right."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "instruction",
+      "prompt": "On paper, trace or copy A a, B b, C c, D d, E e and F f. An adult can draw large dotted letters first.",
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "prompt": "How independently did your child trace or copy the letters?",
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "PHY.FINE.GRIP",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "photo_evidence",
+      "prompt": "Take an optional photo of the letter practice.",
+      "config": {
+        "optional": true,
+        "consent_required": true
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s5",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

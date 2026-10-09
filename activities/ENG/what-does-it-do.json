@@ -1,0 +1,137 @@
+{
+  "schema_version": 2,
+  "slug": "what-does-it-do",
+  "title": "What does each body part do?",
+  "subject": "SCI",
+  "level_from": "L1",
+  "level_to": "L2",
+  "duration_min": 10,
+  "materials": [],
+  "interests": [],
+  "summary": "Match each body part to the job it does.",
+  "recurring": false,
+  "skills": [
+    "SCI.OBS.SENSES"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "match_pairs",
+      "prompt": "Match each body part to what we do with it.",
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "Eyes"
+          },
+          {
+            "id": "l2",
+            "label": "Ears"
+          },
+          {
+            "id": "l3",
+            "label": "Nose"
+          },
+          {
+            "id": "l4",
+            "label": "Mouth"
+          },
+          {
+            "id": "l5",
+            "label": "Skin"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "Hear"
+          },
+          {
+            "id": "r2",
+            "label": "See"
+          },
+          {
+            "id": "r3",
+            "label": "Smell"
+          },
+          {
+            "id": "r4",
+            "label": "Eat and talk"
+          },
+          {
+            "id": "r5",
+            "label": "Feel"
+          }
+        ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ],
+          [
+            "l5",
+            "r5"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "SCI.OBS.SENSES",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Try each item one at a time."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "timer_task",
+      "prompt": "Choose three body parts and act out what each one does.",
+      "config": {
+        "duration_sec": 120,
+        "checklist": [
+          "Pick three body parts",
+          "Act out what each one does"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

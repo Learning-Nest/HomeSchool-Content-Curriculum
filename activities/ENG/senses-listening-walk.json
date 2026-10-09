@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "slug": "senses-listening-walk",
+  "title": "Listen for sounds",
+  "subject": "SCI",
+  "level_from": "L1",
+  "level_to": "L2",
+  "duration_min": 10,
+  "materials": [],
+  "interests": [
+    "nature"
+  ],
+  "summary": "Sit quietly, listen for sounds nearby and describe what you hear.",
+  "recurring": false,
+  "skills": [
+    "SCI.OBS.SENSES"
+  ],
+  "steps": [
+    {
+      "id": "s2",
+      "type": "instruction",
+      "prompt": "Sit quietly with an adult. Listen for three safe, nearby sounds. Tell the adult what you heard.",
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "prompt": "Did your child identify or describe a sound they heard?",
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "SCI.OBS.SENSES",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "reflection",
+      "prompt": "Was it easy or hard to listen quietly?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

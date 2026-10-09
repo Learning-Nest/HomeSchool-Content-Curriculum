@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "slug": "write-my-body-sentences",
+  "title": "Write about my body",
+  "subject": "ENG",
+  "level_from": "L3",
+  "level_to": "L4",
+  "duration_min": 15,
+  "materials": [
+    "paper",
+    "pencil"
+  ],
+  "interests": [],
+  "summary": "Choose and write simple sentences about body parts.",
+  "recurring": false,
+  "skills": [
+    "ENG.WRIT.SENT"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "single_choice",
+      "prompt": "Which sentence is correct?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I see with my eyes."
+          },
+          {
+            "id": "o2",
+            "label": "I see with my feet."
+          },
+          {
+            "id": "o3",
+            "label": "I see with my hands."
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.WRIT.SENT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Say each answer out loud and pick the one that sounds right."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "instruction",
+      "prompt": "Write three sentences, such as “I see with my eyes,” “I hear with my ears,” and “I smell with my nose.”",
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "prompt": "Did your child write or copy sentences that connect body parts with their functions?",
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s4",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

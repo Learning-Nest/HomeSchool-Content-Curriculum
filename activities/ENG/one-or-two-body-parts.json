@@ -1,0 +1,168 @@
+{
+  "schema_version": 2,
+  "slug": "one-or-two-body-parts",
+  "title": "One or two?",
+  "subject": "MAT",
+  "level_from": "L1",
+  "level_to": "L1",
+  "duration_min": 8,
+  "materials": [],
+  "interests": [],
+  "summary": "Count how many of each body part we have: one or two.",
+  "recurring": false,
+  "skills": [
+    "MAT.NUM.COUNT20"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "single_choice",
+      "prompt": "How many hands do you usually have?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "1"
+          },
+          {
+            "id": "o2",
+            "label": "2"
+          },
+          {
+            "id": "o3",
+            "label": "3"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "MAT.NUM.COUNT20",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "single_choice",
+      "prompt": "How many heads do you have?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "1"
+          },
+          {
+            "id": "o2",
+            "label": "2"
+          },
+          {
+            "id": "o3",
+            "label": "4"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "MAT.NUM.COUNT20",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "single_choice",
+      "prompt": "How many eyes do you usually have?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "1"
+          },
+          {
+            "id": "o2",
+            "label": "2"
+          },
+          {
+            "id": "o3",
+            "label": "3"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "MAT.NUM.COUNT20",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "type": "timer_task",
+      "prompt": "Count the body parts that come in twos: hands, ears and eyes. Tell an adult one body part you have only one of.",
+      "config": {
+        "duration_sec": 120,
+        "checklist": [
+          "Count your hands, ears and eyes",
+          "Name a body part you have only one of"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s5",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

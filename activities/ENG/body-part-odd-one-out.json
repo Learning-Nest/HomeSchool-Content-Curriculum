@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "slug": "body-part-odd-one-out",
+  "title": "Find the body-part odd one out",
+  "subject": "ENG",
+  "level_from": "L2",
+  "level_to": "L3",
+  "duration_min": 10,
+  "materials": [],
+  "interests": [],
+  "summary": "Read three words and spot the one that is not a body part.",
+  "recurring": false,
+  "skills": [
+    "ENG.READ.SIGHT"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "single_choice",
+      "prompt": "Which word is not a body part?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "ear"
+          },
+          {
+            "id": "o2",
+            "label": "nose"
+          },
+          {
+            "id": "o3",
+            "label": "table"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o3"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.READ.SIGHT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "single_choice",
+      "prompt": "Which word is not a body part?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "hand"
+          },
+          {
+            "id": "o2",
+            "label": "mouth"
+          },
+          {
+            "id": "o3",
+            "label": "kite"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o3"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.READ.SIGHT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "timer_task",
+      "prompt": "Name five body parts as fast as you can. Then say one word that is not a body part.",
+      "config": {
+        "duration_sec": 120,
+        "checklist": [
+          "Name five body parts",
+          "Say a word that is not a body part"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s4",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "slug": "listen-and-point",
+  "title": "Listen and point",
+  "subject": "LIF",
+  "level_from": "L1",
+  "level_to": "L2",
+  "duration_min": 8,
+  "materials": [],
+  "interests": [],
+  "summary": "Listen to a two-part instruction and point to the named body parts.",
+  "recurring": false,
+  "skills": [
+    "LIF.INSTR.FOLLOW2"
+  ],
+  "steps": [
+    {
+      "id": "s2",
+      "type": "instruction",
+      "prompt": "Ask an adult to say two-part instructions, such as “Touch your nose, then point to your ears” or “Show your hands, then touch your toes”. Do each one in order.",
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "parent_checklist",
+      "prompt": "Could your child listen and point to the named body part?",
+      "config": {
+        "rating_options": [
+          "trying",
+          "with_help",
+          "independent"
+        ]
+      },
+      "scoring": {
+        "mode": "parent_rubric"
+      },
+      "skills": [
+        {
+          "code": "LIF.INSTR.FOLLOW2",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": 2,
+  "slug": "first-sound-a-to-e",
+  "title": "Find the first sound",
+  "subject": "ENG",
+  "level_from": "L2",
+  "level_to": "L3",
+  "duration_min": 12,
+  "materials": [],
+  "interests": [
+    "animals"
+  ],
+  "summary": "Hear and pick the first sound of simple words that start with a, b or e.",
+  "recurring": false,
+  "skills": [
+    "ENG.PHON.LETSND"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "single_choice",
+      "prompt": "Which word begins with the /a/ sound?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "ant"
+          },
+          {
+            "id": "o2",
+            "label": "bag"
+          },
+          {
+            "id": "o3",
+            "label": "cat"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o1"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "single_choice",
+      "prompt": "Which word begins with the /b/ sound?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "dog"
+          },
+          {
+            "id": "o2",
+            "label": "bag"
+          },
+          {
+            "id": "o3",
+            "label": "egg"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "single_choice",
+      "prompt": "Which word begins with the /e/ sound?",
+      "config": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "cat"
+          },
+          {
+            "id": "o2",
+            "label": "egg"
+          },
+          {
+            "id": "o3",
+            "label": "door"
+          }
+        ]
+      },
+      "key": {
+        "correct": [
+          "o2"
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Look carefully at the words and pictures."
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "type": "timer_task",
+      "prompt": "Look around the room. Find one thing that starts with each sound: a, b, c, d and e.",
+      "config": {
+        "duration_sec": 240,
+        "checklist": [
+          "Find something that starts with each sound",
+          "Say the first sound out loud"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s5",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "slug": "letter-sound-picture-match",
+  "title": "Match letters to starting sounds",
+  "subject": "ENG",
+  "level_from": "L2",
+  "level_to": "L3",
+  "duration_min": 12,
+  "materials": [
+    "picture cards"
+  ],
+  "interests": [],
+  "summary": "Match the letters A to E to words that begin with them.",
+  "recurring": false,
+  "skills": [
+    "ENG.PHON.LETSND"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "match_pairs",
+      "prompt": "Match each letter to a word that begins with it.",
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "a"
+          },
+          {
+            "id": "l2",
+            "label": "b"
+          },
+          {
+            "id": "l3",
+            "label": "c"
+          },
+          {
+            "id": "l4",
+            "label": "d"
+          },
+          {
+            "id": "l5",
+            "label": "e"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "egg"
+          },
+          {
+            "id": "r2",
+            "label": "cat"
+          },
+          {
+            "id": "r3",
+            "label": "ant"
+          },
+          {
+            "id": "r4",
+            "label": "dog"
+          },
+          {
+            "id": "r5",
+            "label": "bag"
+          }
+        ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r5"
+          ],
+          [
+            "l3",
+            "r2"
+          ],
+          [
+            "l4",
+            "r4"
+          ],
+          [
+            "l5",
+            "r1"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Try each item one at a time."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "timer_task",
+      "prompt": "Show a picture card and say its first sound out loud, then say the matching letter.",
+      "config": {
+        "duration_sec": 180,
+        "checklist": [
+          "Say the first sound of each card",
+          "Say the matching letter"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

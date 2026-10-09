@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "slug": "alphabet-a-to-f",
+  "title": "Recognise letters A to F",
+  "subject": "ENG",
+  "level_from": "L1",
+  "level_to": "L2",
+  "duration_min": 12,
+  "materials": [
+    "letter cards"
+  ],
+  "interests": [],
+  "summary": "Match the capital and small letters A to F.",
+  "recurring": false,
+  "skills": [
+    "ENG.PHON.LETSND"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "match_pairs",
+      "prompt": "Match each capital letter to its lowercase letter.",
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "A"
+          },
+          {
+            "id": "l2",
+            "label": "B"
+          },
+          {
+            "id": "l3",
+            "label": "C"
+          },
+          {
+            "id": "l4",
+            "label": "D"
+          },
+          {
+            "id": "l5",
+            "label": "E"
+          },
+          {
+            "id": "l6",
+            "label": "F"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "d"
+          },
+          {
+            "id": "r2",
+            "label": "a"
+          },
+          {
+            "id": "r3",
+            "label": "f"
+          },
+          {
+            "id": "r4",
+            "label": "c"
+          },
+          {
+            "id": "r5",
+            "label": "b"
+          },
+          {
+            "id": "r6",
+            "label": "e"
+          }
+        ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r5"
+          ],
+          [
+            "l3",
+            "r4"
+          ],
+          [
+            "l4",
+            "r1"
+          ],
+          [
+            "l5",
+            "r6"
+          ],
+          [
+            "l6",
+            "r3"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.PHON.LETSND",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Try each item one at a time."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "timer_task",
+      "prompt": "Point to each letter A to F on your letter cards and say its name. Then find one of these letters in a book or on a sign at home.",
+      "config": {
+        "duration_sec": 180,
+        "checklist": [
+          "Say the name of each letter A to F",
+          "Find one of the letters at home"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

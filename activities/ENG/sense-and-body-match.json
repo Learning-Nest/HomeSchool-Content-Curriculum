@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "slug": "sense-and-body-match",
+  "title": "Which sense do we use?",
+  "subject": "SCI",
+  "level_from": "L2",
+  "level_to": "L3",
+  "duration_min": 12,
+  "materials": [],
+  "interests": [],
+  "summary": "Match what we do (see, hear, smell, eat, touch) to the body part we use.",
+  "recurring": false,
+  "skills": [
+    "SCI.OBS.SENSES"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "match_pairs",
+      "prompt": "Match the action to the body part used.",
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "See"
+          },
+          {
+            "id": "l2",
+            "label": "Hear"
+          },
+          {
+            "id": "l3",
+            "label": "Smell"
+          },
+          {
+            "id": "l4",
+            "label": "Feel a texture"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "Skin"
+          },
+          {
+            "id": "r2",
+            "label": "Eyes"
+          },
+          {
+            "id": "r3",
+            "label": "Nose"
+          },
+          {
+            "id": "r4",
+            "label": "Ears"
+          }
+        ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r1"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "SCI.OBS.SENSES",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Try each item one at a time."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "timer_task",
+      "prompt": "Name a sense, then point to the body part you use for it. Do this for all five senses.",
+      "config": {
+        "duration_sec": 180,
+        "checklist": [
+          "Name a sense",
+          "Point to the matching body part"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}

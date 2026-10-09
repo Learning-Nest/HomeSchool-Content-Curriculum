@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "slug": "body-word-picture-reading",
+  "title": "Read body words",
+  "subject": "ENG",
+  "level_from": "L2",
+  "level_to": "L3",
+  "duration_min": 12,
+  "materials": [
+    "word cards"
+  ],
+  "interests": [],
+  "summary": "Read body-part words and match them to symbols.",
+  "recurring": false,
+  "skills": [
+    "ENG.READ.SIGHT"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "type": "match_pairs",
+      "prompt": "Match each word to its symbol.",
+      "config": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "hand"
+          },
+          {
+            "id": "l2",
+            "label": "eye"
+          },
+          {
+            "id": "l3",
+            "label": "ear"
+          },
+          {
+            "id": "l4",
+            "label": "nose"
+          },
+          {
+            "id": "l5",
+            "label": "mouth"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "👃"
+          },
+          {
+            "id": "r2",
+            "label": "✋"
+          },
+          {
+            "id": "r3",
+            "label": "👄"
+          },
+          {
+            "id": "r4",
+            "label": "👁️"
+          },
+          {
+            "id": "r5",
+            "label": "👂"
+          }
+        ]
+      },
+      "key": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r5"
+          ],
+          [
+            "l4",
+            "r1"
+          ],
+          [
+            "l5",
+            "r3"
+          ]
+        ]
+      },
+      "scoring": {
+        "mode": "auto"
+      },
+      "skills": [
+        {
+          "code": "ENG.READ.SIGHT",
+          "weight": 1
+        }
+      ],
+      "feedback": {
+        "hints": [
+          "Try each item one at a time."
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "timer_task",
+      "prompt": "Read each word card out loud, then touch that body part on yourself.",
+      "config": {
+        "duration_sec": 180,
+        "checklist": [
+          "Read each word card",
+          "Touch the matching body part"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "reflection",
+      "prompt": "How did this activity feel?",
+      "config": {
+        "emoji_options": [
+          "😊",
+          "😐",
+          "😢"
+        ]
+      },
+      "scoring": {
+        "mode": "none"
+      }
+    }
+  ]
+}
