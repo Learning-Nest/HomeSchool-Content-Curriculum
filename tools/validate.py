@@ -30,9 +30,21 @@ def evidence_steps(a: dict) -> list[dict]:
     return out
 
 
+def has_image(x) -> bool:
+    if isinstance(x, dict):
+        return ("image" in x and isinstance(x["image"], dict)) or any(has_image(v) for v in x.values())
+    if isinstance(x, list):
+        return any(has_image(v) for v in x)
+    return False
+
+
 def check_v2(a: dict, skills: dict) -> list[str]:
     """Rules the JSON Schema cannot express (mirrors backend-api/app/services/content.py `_check_v2`)."""
     problems: list[str] = []
+    if has_image(a):
+        problems.append(
+            "image: pictures cannot be set in files yet; import the activity, then add pictures in the educator editor"
+        )
     steps = a.get("steps", [])
     if not any(st.get("enabled", True) for st in steps):
         problems.append("at least one exercise must be enabled")

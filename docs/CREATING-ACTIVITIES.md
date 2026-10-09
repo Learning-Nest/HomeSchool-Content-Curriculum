@@ -382,6 +382,12 @@ checklist in section 11.
 
 Commit the new JSON file, open a pull request and merge it, so the repository and the live content agree.
 
+### Pictures
+
+Activity files in this repository cannot contain pictures yet (the checker rejects an `image` field). Pictures for
+exercises, options and match items are added in the educator editor, which uploads and resizes them. Create the
+activity from the file first, then open it in the editor to add pictures.
+
 ### Fixing an activity after publishing
 
 * Imports only **add**: they never change or delete an activity that already exists. To fix a published activity, edit
